@@ -3,9 +3,9 @@ function operate(a, operator, b) {
         case "+": return a + b;
         case "-": return a - b;
         case "*": return a * b;
-        case "/": if (b!=0) return a / b
-        else return "impossible ";
-    }
+        case "/":
+            return  a/b
+}
 }
 
 function display(courant) {
@@ -51,7 +51,10 @@ function calculate() {
         if (a !== null && operator && courant !== "") {
             b = parseFloat(courant);
             a = operate(a, operator, b);
-            display(a);
+            if (a===Infinity)
+            display("impossible");
+            else
+            display(a)
             courant = "";
             operator = null;
         }
