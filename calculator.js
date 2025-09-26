@@ -12,15 +12,9 @@ function display(courant) {
     document.querySelector("#res").value = courant || "0";
 }
 
-function clear() {
-    document.querySelector("#clear").addEventListener("click", function () {
-        display("0");
-        courant = "";
-        a = null;
-        b = null;
-        operator = null;
-    });
-}
+
+    
+
 
 let courant = "";
 let a = null;
@@ -60,7 +54,14 @@ function calculate() {
         }
     });
 
-    clear();
+ 
 }
 
 calculate();
+ document.querySelector("#clear").addEventListener("click", function () {
+        display("0");
+        courant = "";
+        a = null;
+        b = null;
+        operator = null;
+    });
