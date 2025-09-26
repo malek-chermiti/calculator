@@ -2,27 +2,32 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title> calculatrice</title>
+    <title>calculatrice</title>
+    <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
-    <div id ="labels">
-     <label >number 1</label>
-     <input type="number">
-     <label >number 2</label>
-     <input type="number">
-     <input type="number">
-     </div>
-     <div id ="buttons">
-        <button>+</button>
-        <button>-</button>
-        <button>*</button>
-        <button>/</button>
-        <button>=</button>
-        <button>clear</button>
+    <div id="resultat">
+        <input id="res" placeholder="0">
+    </div>
+    <div id="buttons">
+        <button value="+" class="signe">+</button>
+        <button value="-" class="signe">-</button>
+        <button value="*" class="signe">*</button>
+        <button value="/" class="signe">/</button>
+        <button value="=" id="egale">=</button>
+        <button id="clear">clear</button>
+        <button value="0" class="num">0</button>
+        <button value="1" class="num">1</button>
+        <button value="2" class="num">2</button>
+        <button value="3" class="num">3</button>
+        <button value="4" class="num">4</button>
+        <button value="5" class="num">5</button>
+        <button value="6" class="num">6</button>
+        <button value="7" class="num">7</button>
+        <button value="8" class="num">8</button>
+        <button value="9" class="num">9</button>
+    </div>
 
-
-     </div>
-     
-
+    <script src="calculator.js"></script>
 </body>
 </html>
